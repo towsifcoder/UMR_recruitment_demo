@@ -1,0 +1,112 @@
+.brand {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.header-text{
+    color: #adabab;
+    position: absolute;
+    right: 150px;
+}
+
+  .site-header {
+    position: relative;
+    /* background-color: #def7ff;  */
+    background-color: #fff; 
+    }
+  
+  .site-header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 1rem;
+    /* padding-bottom: 1rem; */
+    background-color: #fff;
+}
+  
+  .site-header__start {
+    display: flex;
+    align-items: center; }
+    .site-header__start > * + * {
+      margin-left: 1rem; }
+
+.main-content{
+    padding-top: 20px;
+    max-width: 90vw;
+    min-width: 50vw;
+    width: 70vw;
+    margin: auto;
+    padding-left: 15vh;
+}
+
+.img-home{
+    width: 70vw;
+}
+  
+.page_title{
+  padding-bottom: 40px;
+  font-size: 30px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th {
+  font-weight: bold;
+  color: #fff;
+  background-color: rgb(133, 133, 133);
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+  @media (max-width: 679px) {
+    .site-header__end {
+      flex: 0 0 100%;
+      order: 2;
+      margin-top: 1rem; } }
+  
+  .nav__wrapper {
+    margin-top: 10px;
+    position: fixed;
+    top: 66px;
+    left: 0;
+    width: Max(220px, 20%);
+    bottom: 0;
+    z-index: 1;
+    /* visibility: hidden;
+    opacity: 0; */
+    /* transform: translateX(-100%); */
+    /* background-color: #d9f0f7; */
+    background-color: #c9c9c9;
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+    display: block; }
+    /* .nav__wrapper.active {
+      visibility: visible;
+      opacity: 1;
+      transform: translateX(0); } */
+    @media (max-width: 679px) {
+      .nav__wrapper {
+        top: 101px;
+        /* Use a CSS variable and get JS help */ } }
+  .nav__item {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
+    .nav__item a {
+      display: block;
+      padding: 1.5rem 1rem; }
+  

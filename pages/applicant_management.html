@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>UMR RECRUITMENT SERVICES</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../styles/reset.min.css" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/index.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrapper site-header__wrapper">
+        <div class="site-header__start">
+          <nav class="nav">
+            <ul class="nav__wrapper">
+              <li class="nav__item"><a href="../index.html">Home</a></li>
+              <li class="nav__item"><a href="applicant_management.html">Applicant Management</a></li>
+              <li class="nav__item"><a href="applicant_status.html">Applicant Status</a></li>
+              <li class="nav__item"><a href="institution_management.html">Institution Management</a></li>
+              <li class="nav__item"><a href="user_management.html">User Management</a></li>
+              <li class="nav__item"><a href="role_management.html">Role Management</a></li>
+              <li class="nav__item"><a href="transfer_management.html">Transfer Management</a></li>
+              <li class="nav__item"><a href="information.html">Information</a></li>
+              <li class="nav__item"><a href="email_management.html">Email Management</a></li>
+              <li class="nav__item"><a href="contract_management.html">Contract Management</a></li>
+              <li class="nav__item"><a href="monitoring.html">Monitoring</a></li>
+            </ul>
+          </nav>
+          <a href="../index.html" class="brand"><img src="../img/universal-medical-records_logo.png" alt="UMR logo"></a>
+          <div class="header-text">
+            UMR RECRUITMENT SERVICES >> Applicant Management
+          </div>
+        </div>
+        <div class="site-header__end">
+            <a href="#" class="brand"><img src="../img/profile-icon.png" alt="Profile" style="height: 40px; width:auto"></a>
+        </div>
+      </div>
+      <hr>
+    </header>
+    <div class="main-content">
+      <div class="page_title">
+        APPLICANT MANAGEMENT
+      </div>
+      <div>
+        <form action="/action_page.php">
+            <label for="fname" >Search Applicant :</label>  
+            <input type="text" id="applicant" name="applicant" placeholder="Search applicants by name, email, phone, institution" style="width: 400px;">
+            <input class="btn btn-primary" type="button" value="Search">
+            <input class="btn btn-primary" type="button" value="New Applicant">
+            <input class="btn btn-danger" type="button" value="Delete Applicant">
+            <input class="btn btn-primary" type="button" value="Applicant Detail">
+            <input class="btn btn-primary" type="button" value="Colunms">
+        </form>
+      </div> <br> 
+      <div class="table_content">
+        <table>
+          <tr>
+            <th><input type="checkbox" id="checkboxid" name="checkbox"></th>
+            <th>Applicant Name</th>
+            <th>Institution</th>
+            <th>Position</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Status</th>
+            <th>Actions</th>
+          </tr>
+          <tr>
+            <td><input type="checkbox" id="checkboxid" name="checkbox"></td>
+            <td>Towsif Mts</td>
+            <td>ABC healthcare</td>
+            <td>Accountant</td>
+            <td>tpatwary@abc.com</td>
+            <td>+8801675346255</td>
+            <td>Hired</td>
+            <td>
+              <button type="button"><img src="../img/edit-icon.png" alt="edit" style="height: 15px; width:auto"></button>
+              <button type="button"><img src="../img/delete-icon.png" alt="delete" style="height: 15px; width:auto"></button>
+              <button type="button"><img src="../img/view-icon.png" alt="view" style="height: 15px; width:auto"></button>
+            </td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" id="checkboxid" name="checkbox"></td>
+            <td>Francisco Chang</td>
+            <td>Centro comercial Moctezuma</td>
+            <td>Accountant</td>
+            <td>chang@abc.com</td>
+            <td>+8801677111555</td>
+            <td>Hired</td>
+            <td>
+              <button type="button"><img src="../img/edit-icon.png" alt="edit" style="height: 15px; width:auto"></button>
+              <button type="button"><img src="../img/delete-icon.png" alt="delete" style="height: 15px; width:auto"></button>
+              <button type="button"><img src="../img/view-icon.png" alt="view" style="height: 15px; width:auto"></button>
+            </td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" id="checkboxid" name="checkbox"></td>
+            <td>Helen Bennett</td>
+            <td>Island Trading</td>
+            <td>Accountant</td>
+            <td>helen@abc.com</td>
+            <td>+88016772221111</td>
+            <td>Hired</td>
+            <td>
+              <button type="button"><img src="../img/edit-icon.png" alt="edit" style="height: 15px; width:auto"></button>
+              <button type="button"><img src="../img/delete-icon.png" alt="delete" style="height: 15px; width:auto"></button>
+              <button type="button"><img src="../img/view-icon.png" alt="view" style="height: 15px; width:auto"></button>
+            </td>
+          </tr>
+        </table>
+        
+      </div>
+
+    </div>
+
+    <script src="../js/index.js"></script>
+  </body>
+</html>
