@@ -47,6 +47,10 @@
         <form action="/action_page.php">
             <label for="fname">Search Applicant :</label>  
             <input type="text" id="applicant" name="applicant" placeholder="Search applicants by name, email, phone, institution" style="width: 400px;">
+            <select id="persontype" name="persontype">
+              <option value="recruiter" selected>Recruiter</option>
+              <option value="applicant">Applicant</option>
+            </select>
             <input class="btn btn-primary" type="button" value="Search">
             <input class="btn btn-primary" type="button" value="Send To">
             <input class="btn btn-danger" type="button" value="View Details">

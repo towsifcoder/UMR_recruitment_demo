@@ -47,6 +47,11 @@
         <form action="/action_page.php">
             <label for="fname">Search User :</label>  
             <input type="text" id="applicant" name="applicant" placeholder="Search applicants by name, email, phone, agency" style="width: 400px;">
+            <select id="usertype" name="usertype">
+              <option value="searchby" selected>Search By</option>
+              <option value="recruiter">Recruiter</option>
+              <option value="applicant">Applicant</option>
+            </select>
             <input class="btn btn-primary" type="button" value="Search">
             <input class="btn btn-danger" type="button" value="New User">
             <input class="btn btn-primary" type="button" value="Delete Users">
