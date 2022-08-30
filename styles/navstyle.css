@@ -1,0 +1,31 @@
+.subnav {
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  border: none;
+  outline: none;
+  color: black;
+  padding-left: 10px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.subnav:hover .subnavbtn {
+  color: white;
+  width: 100%;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: gray;
+  width: 100%;
+  z-index: 2;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
