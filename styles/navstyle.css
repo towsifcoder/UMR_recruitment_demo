@@ -18,14 +18,50 @@
 }
 
 .subnav-content {
+  font-size: 12px;
   display: none;
   position: absolute;
   left: 0;
-  background-color: gray;
+  background-color: whitesmoke;
   width: 100%;
   z-index: 2;
 }
 
 .subnav:hover .subnav-content {
+  display: block;
+}
+
+/* sub-subnav */
+
+.sub-subnav {
+  overflow: hidden;
+}
+
+.sub-subnav .sub-subnavbtn {
+  border: none;
+  outline: none;
+  color: black;
+  padding-left: 10px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.sub-subnav:hover .sub-subnavbtn {
+  color: white;
+  width: 100%;
+}
+
+.sub-subnav-content {
+  font-size: 12px;
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: rgb(236, 213, 213);
+  width: 100%;
+  z-index: 2;
+}
+
+.sub-subnav:hover .sub-subnav-content {
   display: block;
 }

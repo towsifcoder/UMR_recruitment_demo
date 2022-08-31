@@ -21,20 +21,29 @@
       <div class="wrapper site-header__wrapper">
         <div class="site-header__start">
           <nav class="nav">
-            <!-- <button class="nav__toggle" aria-expanded="false" type="button"  style="background-color: #fff; border:0;">
-                <img src="img/menu-icon.png" alt="menu" style="height: 20px; width:auto;">
-            </button> -->
             <ul class="nav__wrapper">
                 <li class="nav__item"><a href="index.html">Home</a></li>
                 <li class="nav__item subnav">
                   <a href="pages/applicant_management.html" class="subnavbtn">Applicant Management <i class="fa fa-caret-down"></i></a>
                   <ul class="subnav-content">
-                    <a href="#">Applicant Work History</a>
-                    <a href="#">Merge Applicant</a>
-                    <a href="#">Manage Applicant Phone</a>
-                    <a href="#">Manage Applicant Email</a>
-                    <a href="#">Export/Import Applicant</a>
-                    <a href="#">Applicant Group Management</a>
+                    <li><a href="#">Applicant Work History</a></li>
+                    <li><a href="#">Merge Applicant</a></li>
+                    <li><a href="#">Manage Applicant Phone</a></li>
+                    <li><a href="#">Manage Applicant Email</a></li>
+                    <li><a href="#">Export/Import Applicant</a></li>
+                    <li><a href="#">Applicant Group Management</a></li>
+                    <li><a href="#">Send Email to Applicant</a></li>
+                    <li><a href="#">Send Bulk Email to Applicants</a></li>
+                    <li><a href="#">Change Applicant Status</a></li>
+                    <li><a href="#">Applicant License Information</a></li>
+                    <li><a href="#">Import Applicants</a></li>
+                    <li class="nav__item sub-subnav"><a href="#" class="sub-subnavbtn">Information <i class="fa fa-caret-down"></i></a>
+                      <ul class="sub-subnav-content">
+                        <li><a href="#">Applicant Type Information</a></li>
+                        <li><a href="#">Contact Information</a></li>
+                        <li><a href="#">Group Information</a></li>
+                      </ul>
+                    </li>
                   </ul>
                 </li>
                 <li class="nav__item"><a href="pages/applicant_status.html">Applicant Status</a></li>
@@ -53,9 +62,17 @@
             UMR RECRUITMENT SERVICES >> Home
           </div>
         </div>
-        <div class="site-header__end">
-            <a href="#" class="brand"><img src="img/profile-icon.png" alt="Profile" style="height: 40px; width:auto; background-color: #fff !important;"></a>
+
+        <div class="site-header__end dropdown" style="float:right;">
+          <a href="#" class="brand"><button class="dropbtn"><img src="img/profile-icon.png" alt="Profile" style="height: 40px; width:auto; background-color: #fff !important;"></button></a>
+          <div class="dropdown-content">
+            <a href="#">User Profile</a>
+            <a href="#">Change Password</a>
+            <a href="#">Email Configuration</a>
+            <a href="#">Email Template</a>
+          </div>
         </div>
+        
       </div>
       <hr>
     </header>
