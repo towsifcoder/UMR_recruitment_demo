@@ -11,7 +11,6 @@
 
   .site-header {
     position: relative;
-    /* background-color: #def7ff;  */
     background-color: #fff; 
     }
   
@@ -55,15 +54,6 @@ table {
   width: 100%;
 }
 
-/* th {
-  font-weight: bold;
-  color: #fff;
-  background-color: rgb(133, 133, 133);
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 8px;
-} */
-
 td {
   border: 1px solid #dddddd;
   text-align: left;
@@ -74,44 +64,6 @@ tr:nth-child(even) {
   background-color: #dddddd;
 }
 
-
-/* dropdown  */
-.dropbtn {
-  background-color: white;
-  color: white;
-  border: none;
-  cursor: pointer;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  right: 0;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content a:hover {background-color: #f1f1f1;}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-/* dropdown css end  */
 
 
 
@@ -129,23 +81,15 @@ tr:nth-child(even) {
     width: Max(150px, 15%);
     bottom: 0;
     z-index: 1;
-    /* visibility: hidden;
-    opacity: 0; */
-    /* transform: translateX(-100%); */
-    /* background-color: #d9f0f7; */
-    background-color: #c9c9c9;
-    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+    /* background-color: #c9c9c9; */
+    background-color: #08494d;
+    transition: transfrgb(241, 132, 132)s ease-out, opacity 0.3s ease-out;
     display: block; }
-    /* .nav__wrapper.active {
-      visibility: visible;
-      opacity: 1;
-      transform: translateX(0); } */
     @media (max-width: 679px) {
       .nav__wrapper {
-        top: 101px;
-        /* Use a CSS variable and get JS help */ } }
+        top: 101px;} }
   .nav__item {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
     .nav__item a {
       display: block;
       padding: 1.5rem 1rem; }
