@@ -54,6 +54,10 @@ table {
   width: 100%;
 }
 
+#dtBasicExample th {
+  background-color: #10686d;
+}
+
 td {
   border: 1px solid #dddddd;
   text-align: left;
