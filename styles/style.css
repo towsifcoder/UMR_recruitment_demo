@@ -92,6 +92,7 @@ body {
 }
 
 a.buttonnavigation:hover  {
-  background-color: rgb(24, 103, 139) !important;
+  /* background-color: rgb(24, 103, 139) !important; */
+  background-color: rgb(63, 63, 63) !important;
   font-weight: normal;
 }
