@@ -82,3 +82,16 @@ body {
   min-width: initial;
   padding: 0.5rem;
 }
+
+
+/* inner navigation design */
+
+.buttonnavigation {
+  margin-top:-10px; 
+  text-decoration: none;  
+}
+
+a.buttonnavigation:hover  {
+  background-color: rgb(24, 103, 139) !important;
+  font-weight: normal;
+}
