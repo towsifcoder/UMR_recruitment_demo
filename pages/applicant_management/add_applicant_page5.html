@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>UMR RECRUITMENT SERVICES</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../../styles/reset.min.css" />
+    <link rel="stylesheet" href="../../styles/style.css" />
+    <link rel="stylesheet" href="../../styles/index.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.2/css/jquery.dataTables.min.css">
+
+    <link rel="stylesheet" href="../../styles/navstyle.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrapper site-header__wrapper">
+        <div class="site-header__start">
+          <nav class="nav">
+            <ul class="nav__wrapper">
+              <li class="nav__item"><a href="../../index.html">Home</a></li>
+              <li class="nav__item subnav">
+                <a href="../applicant_management.html" class="subnavbtn">Applicant Management <i class="fa fa-caret-down"></i></a>
+                <ul class="subnav-content">
+                  <li><a href="#"><i class="fa fa-bars"></i>&nbsp; Applicant Work History</a></li>
+                  <li><a href="#"><i class="fa fa-bars"></i>&nbsp; Merge Applicant</a></li>
+                  <li><a href="#"><i class="fa fa-bars"></i>&nbsp; Manage Applicant Phone</a></li>
+                  <li><a href="#"><i class="fa fa-bars"></i>&nbsp; Manage Applicant Email</a></li>
+                  <li><a href="#"><i class="fa fa-bars"></i>&nbsp; Export/Import Applicant</a></li>
+                  <li><a href="#"><i class="fa fa-bars"></i>&nbsp; Applicant Group Management</a></li>
+                  <li><a href="#"><i class="fa fa-bars"></i>&nbsp; Send Email to Applicant</a></li>
+                  <li><a href="#"><i class="fa fa-bars"></i>&nbsp; Send Bulk Email to Applicants</a></li>
+                  <li><a href="#"><i class="fa fa-bars"></i>&nbsp; Change Applicant Status</a></li>
+                  <li><a href="#"><i class="fa fa-bars"></i>&nbsp; Applicant License Information</a></li>
+                  <li><a href="#"><i class="fa fa-bars"></i>&nbsp; Import Applicants</a></li>
+                  <li class="nav__item sub-subnav"><a href="#" class="sub-subnavbtn"><i class="fa fa-bars"></i>&nbsp;&nbsp; Information <i class="fa fa-caret-down"></i></a>
+                    <ul class="sub-subnav-content">
+                      <li><a href="#">&nbsp;<i class="fa fa-circle"></i>&nbsp; Applicant Type Information</a></li>
+                      <li><a href="#">&nbsp;<i class="fa fa-circle"></i>&nbsp; Contact Information</a></li>
+                      <li><a href="#">&nbsp;<i class="fa fa-circle"></i>&nbsp; Group Information</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav__item"><a href="../applicant_status.html">Applicant Status</a></li>
+              <li class="nav__item"><a href="../institution_management.html">Institution Management</a></li>
+              <li class="nav__item"><a href="../user_management.html">User Management</a></li>
+              <li class="nav__item"><a href="../role_management.html">Role Management</a></li>
+              <li class="nav__item"><a href="../transfer_management.html">Transfer Management</a></li>
+              <li class="nav__item"><a href="../information.html">Information</a></li>
+              <li class="nav__item"><a href="../email_management.html">Email Management</a></li>
+              <li class="nav__item"><a href="../contract_management.html">Contract Management</a></li>
+              <li class="nav__item"><a href="../monitoring.html">Monitoring</a></li>
+            </ul>
+          </nav>
+          <a href="../../index.html" class="brand"><img src="../../img/universal-medical-records_logo.png" alt="UMR logo"></a>
+          <div class="header-text">
+            <span style="font-size: 25px; color: #10686d">UMR RECRUITMENT SERVICES</span> >> Applicant Management
+          </div>
+        </div>
+        
+        <div class="site-header__end dropdown" style="float:right;">
+          <a href="#" class="brand"><button class="dropbtn"><img src="../../img/profile-icon.png" alt="Profile" style="height: 40px; width:auto; background-color: #fff !important;"></button></a>
+          <div class="dropdown-content">
+            <a href="#">User Profile</a>
+            <a href="#">Change Password</a>
+            <a href="#">Email Configuration</a>
+            <a href="#">Email Template</a>
+          </div>
+        </div>
+
+      </div>
+      <hr>
+    </header>
+
+    <div class="main-content">
+      <div class="page_title">
+        ADD APPLICANT
+      </div>
+      <div style="margin-left: 0px;">
+        <form>
+          <label style="margin-bottom: 20px;font-size: 20px;color:rgb(7, 102, 131);">Review</label> <br>
+
+          <label style="font-size: 15px; color:rgb(45, 144, 151);">
+            Personal Info
+          </label>
+
+          <div class="row">
+            <div class="col-md-4" >
+              <div  class="col-md-4">
+                <label class="form-label" style="margin-top: 5px;">Full Name: </label>
+              </div>
+              <div class="col-md-8">
+                <label class="form-label" style="font-weight: normal;margin-top: 5px;">Md Towsif Patwary</label>
+              </div>
+            </div>
+          </div>
+          
+          <div class="row" style="margin-bottom: 10px;">
+            <div class="col-md-4" >
+              <div  class="col-md-4">
+                <label class="form-label" style="margin-top: 5px;">Address:</label>
+              </div>
+              <div class="col-md-8">
+                <label class="form-label" style="font-weight: normal;margin-top: 5px;">56 Mohakhali, Dhaka, Bangladesh</label>
+              </div>
+            </div>
+            <div class="col-md-4" >
+              <div  class="col-md-4">
+                <label class="form-label" style="margin-top: 5px;">Apartment #:</label>
+              </div>
+              <div class="col-md-8">
+                <label class="form-label" style="font-weight: normal;margin-top: 5px;">56</label>
+              </div>
+            </div>
+            <div class="col-md-4" >
+              <div  class="col-md-4">
+                <label class="form-label" style="margin-top: 5px;">Country:</label>
+              </div>
+              <div class="col-md-8">
+                <label class="form-label" style="font-weight: normal;margin-top: 5px;">United State</label>
+              </div>
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="col-md-4" >
+              <div  class="col-md-4">
+                <label class="form-label" style="margin-top: 5px;">Zip Look Up:</label>
+              </div>
+              <div class="col-md-8">
+                <label class="form-label" style="font-weight: normal;margin-top: 5px;">Not Applicable</label>
+              </div>
+            </div>
+            <div class="col-md-4" >
+              <div  class="col-md-4">
+                <label class="form-label" style="margin-top: 5px;">Country Of Birth:</label>
+              </div>
+              <div class="col-md-8">
+                <label class="form-label" style="font-weight: normal;margin-top: 5px;">UK</label>
+              </div>
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="col-md-4" >
+              <div  class="col-md-4">
+                <label class="form-label" style="margin-top: 5px;">Primary Language:</label>
+              </div>
+              <div class="col-md-8">
+                <label class="form-label" style="font-weight: normal;margin-top: 5px;">English</label>
+              </div>
+            </div>
+            <div class="col-md-4" >
+              <div  class="col-md-4">
+                <label class="form-label" style="margin-top: 5px;">Secondary Language:</label>
+              </div>
+              <div class="col-md-8">
+                <label class="form-label" style="font-weight: normal;margin-top: 5px;">Native</label>
+              </div>
+            </div>
+          </div>
+
+
+          <label style="margin-top: 20px; color:rgb(45, 144, 151);">
+            Identity Info
+          </label>
+
+          <div class="row">
+            <div class="col-md-4" >
+              <div  class="col-md-4">
+                <label class="form-label" style="margin-top: 5px;">SSN/TIN:</label>
+              </div>
+              <div class="col-md-8">
+                <label class="form-label" style="font-weight: normal;margin-top: 5px;">1264756350</label>
+              </div>
+            </div>
+            <div class="col-md-4" >
+              <div  class="col-md-4">
+                <label class="form-label" style="margin-top: 5px;">Gender:</label>
+              </div>
+              <div class="col-md-8">
+                <label class="form-label" style="font-weight: normal;margin-top: 5px;">Male</label>
+              </div>
+            </div>
+            <div class="col-md-4" >
+              <div  class="col-md-4">
+                <label class="form-label" style="margin-top: 5px;">Follow-up:</label>
+              </div>
+              <div class="col-md-8">
+                <label class="form-label" style="font-weight: normal;margin-top: 5px;">Abcd</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-4" >
+              <div  class="col-md-4">
+                <label class="form-label" style="margin-top: 5px;">Race:</label>
+              </div>
+              <div class="col-md-8">
+                <label class="form-label" style="font-weight: normal;margin-top: 5px;">Asian</label>
+              </div>
+            </div>
+            <div class="col-md-4" >
+              <div  class="col-md-4">
+                <label class="form-label" style="margin-top: 5px;">Eye Color:</label>
+              </div>
+              <div class="col-md-8">
+                <label class="form-label" style="font-weight: normal;margin-top: 5px;">Black</label>
+              </div>
+            </div>
+            <div class="col-md-4" >
+              <div  class="col-md-4">
+                <label class="form-label" style="margin-top: 5px;">Date Of Birth:</label>
+              </div>
+              <div class="col-md-8">
+                <label class="form-label" style="font-weight: normal;margin-top: 5px;">03 - 10 -1994</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-4" >
+              <div  class="col-md-4">
+                <label class="form-label" style="margin-top: 5px;">Annyversary Date:</label>
+              </div>
+              <div class="col-md-8">
+                <label class="form-label" style="font-weight: normal;margin-top: 5px;">26 - 10 -2016</label>
+              </div>
+            </div>
+          </div>
+
+
+
+          <label style="margin-top: 20px; color:rgb(45, 144, 151);">
+            Contact info
+          </label>
+
+          <div class="row">
+            <div class="col-md-4" >
+              <div  class="col-md-4">
+                <label class="form-label" style="margin-top: 5px;">Telephone(work):</label>
+              </div>
+              <div class="col-md-8">
+                <label class="form-label" style="font-weight: normal;margin-top: 5px;">64100333</label>
+              </div>
+            </div>
+            <div class="col-md-4" >
+              <div  class="col-md-4">
+                <label class="form-label" style="margin-top: 5px;">Pager:</label>
+              </div>
+              <div class="col-md-8">
+                <label class="form-label" style="font-weight: normal;margin-top: 5px;">001</label>
+              </div>
+            </div>
+            <div class="col-md-4" >
+              <div  class="col-md-4">
+                <label class="form-label" style="margin-top: 5px;">Telephone(home):</label>
+              </div>
+              <div class="col-md-8">
+                <label class="form-label" style="font-weight: normal;margin-top: 5px;">64100091</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-4" >
+              <div  class="col-md-4">
+                <label class="form-label" style="margin-top: 5px;">Fax:</label>
+              </div>
+              <div class="col-md-8">
+                <label class="form-label" style="font-weight: normal;margin-top: 5px;">44444</label>
+              </div>
+            </div>
+            <div class="col-md-4" >
+              <div  class="col-md-4">
+                <label class="form-label" style="margin-top: 5px;">Mobile:</label>
+              </div>
+              <div class="col-md-8">
+                <label class="form-label" style="font-weight: normal;margin-top: 5px;">0167555444222</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-4" >
+              <div  class="col-md-4">
+                <label class="form-label" style="margin-top: 5px;">Email Type:</label>
+              </div>
+              <div class="col-md-8">
+                <label class="form-label" style="font-weight: normal;margin-top: 5px;">Personal</label>
+              </div>
+            </div>
+            <div class="col-md-4" >
+              <div  class="col-md-4">
+                <label class="form-label" style="margin-top: 5px;">Email:</label>
+              </div>
+              <div class="col-md-8">
+                <label class="form-label" style="font-weight: normal;margin-top: 5px;">abcd@hotmail.com</label>
+              </div>
+            </div>
+          </div>
+
+
+
+          <label style="margin-top: 20px; color:rgb(45, 144, 151);">
+            Qualifications
+          </label>
+          
+          <div class="row">
+            <div class="col-md-4" >
+              <div  class="col-md-4">
+                <label class="form-label" style="margin-top: 5px;">Primary Language:</label>
+              </div>
+              <div class="col-md-8">
+                <label class="form-label" style="font-weight: normal;margin-top: 5px;">English</label>
+              </div>
+            </div>
+            <div class="col-md-4" >
+              <div  class="col-md-4">
+                <label class="form-label" style="margin-top: 5px;">Secondary Language:</label>
+              </div>
+              <div class="col-md-8">
+                <label class="form-label" style="font-weight: normal;margin-top: 5px;">Native</label>
+              </div>
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="col-md-4" >
+              <div  class="col-md-4">
+                <label class="form-label" style="margin-top: 5px;">Assigned Recruiter:</label>
+              </div>
+              <div class="col-md-8">
+                <label class="form-label" style="font-weight: normal;margin-top: 5px;">Dummy1</label>
+              </div>
+            </div>
+            <div class="col-md-4" >
+              <div  class="col-md-4">
+                <label class="form-label" style="margin-top: 5px;">Comment:</label>
+              </div>
+              <div class="col-md-8">
+                <label class="form-label" style="font-weight: normal;margin-top: 5px;">Nice</label>
+              </div>
+            </div>
+          </div>
+
+
+
+          <label style="margin-top: 20px; color:rgb(45, 144, 151);">
+            Work History
+          </label>
+          
+          <div class="row">
+            <div class="col-md-4" >
+              <div  class="col-md-4">
+                <label class="form-label" style="margin-top: 5px;">Institution:</label>
+              </div>
+              <div class="col-md-8">
+                <label class="form-label" style="font-weight: normal;margin-top: 5px;">ABC Institution</label>
+              </div>
+            </div>
+            <div class="col-md-4" >
+              <div  class="col-md-4">
+                <label class="form-label" style="margin-top: 5px;">Position:</label>
+              </div>
+              <div class="col-md-8">
+                <label class="form-label" style="font-weight: normal;margin-top: 5px;">Manger</label>
+              </div>
+            </div>
+            <div class="col-md-4" >
+              <div  class="col-md-4">
+                <label class="form-label" style="margin-top: 5px;">Shift:</label>
+              </div>
+              <div class="col-md-8">
+                <label class="form-label" style="font-weight: normal;margin-top: 5px;">Day</label>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4" >
+              <div  class="col-md-4">
+                <label class="form-label" style="margin-top: 5px;">Department Name:</label>
+              </div>
+              <div class="col-md-8">
+                <label class="form-label" style="font-weight: normal;margin-top: 5px;">ABC Department</label>
+              </div>
+            </div>
+            <div class="col-md-4" >
+              <div  class="col-md-4">
+                <label class="form-label" style="margin-top: 5px;">Position:</label>
+              </div>
+              <div class="col-md-8">
+                <label class="form-label" style="font-weight: normal;margin-top: 5px;">Manger</label>
+              </div>
+            </div>
+            <div class="col-md-4" >
+              <div  class="col-md-4">
+                <label class="form-label" style="margin-top: 5px;">Department Phone No.:</label>
+              </div>
+              <div class="col-md-8">
+                <label class="form-label" style="font-weight: normal;margin-top: 5px;">92143645</label>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4" >
+              <div  class="col-md-4">
+                <label class="form-label" style="margin-top: 5px;">Department Extension No.:</label>
+              </div>
+              <div class="col-md-8">
+                <label class="form-label" style="font-weight: normal;margin-top: 5px;">92345888</label>
+              </div>
+            </div>
+            <div class="col-md-4" >
+              <div  class="col-md-4">
+                <label class="form-label" style="margin-top: 5px;">Location:</label>
+              </div>
+              <div class="col-md-8">
+                <label class="form-label" style="font-weight: normal;margin-top: 5px;">Location 1</label>
+              </div>
+            </div>
+            <div class="col-md-4" >
+              <div  class="col-md-4">
+                <label class="form-label" style="margin-top: 5px;">Salary:</label>
+              </div>
+              <div class="col-md-8">
+                <label class="form-label" style="font-weight: normal;margin-top: 5px;">10000000</label>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4" >
+              <div  class="col-md-4">
+                <label class="form-label" style="margin-top: 5px;">Salary Type:</label>
+              </div>
+              <div class="col-md-8">
+                <label class="form-label" style="font-weight: normal;margin-top: 5px;">Annual Rate</label>
+              </div>
+            </div>
+            <div class="col-md-4" >
+              <div  class="col-md-4">
+                <label class="form-label" style="margin-top: 5px;">Resume:</label>
+              </div>
+              <div class="col-md-8">
+                <label class="form-label" style="font-weight: normal;margin-top: 5px;">Uploaded resume</label>
+              </div>
+            </div>
+            <div class="col-md-4" >
+              <div  class="col-md-4">
+                <label class="form-label" style="margin-top: 5px;">Resume Title:</label>
+              </div>
+              <div class="col-md-8">
+                <label class="form-label" style="font-weight: normal;margin-top: 5px;">Abc title</label>
+              </div>
+            </div>
+          </div>
+
+
+
+          <label style="margin-top: 20px; color:rgb(45, 144, 151);">
+            Salary Info
+          </label>
+          
+          <div class="row">
+            <div class="col-md-4" >
+              <div  class="col-md-4">
+                <label class="form-label" style="margin-top: 5px;">Desired Position:</label>
+              </div>
+              <div class="col-md-8">
+                <label class="form-label" style="font-weight: normal;margin-top: 5px;">Accountant</label>
+              </div>
+            </div>
+            <div class="col-md-4" >
+              <div  class="col-md-4">
+                <label class="form-label" style="margin-top: 5px;">Desired Salary:</label>
+              </div>
+              <div class="col-md-8">
+                <label class="form-label" style="font-weight: normal;margin-top: 5px;">15000000</label>
+              </div>
+            </div>
+            <div class="col-md-4" >
+              <div  class="col-md-4">
+                <label class="form-label" style="margin-top: 5px;">Salary Type:</label>
+              </div>
+              <div class="col-md-8">
+                <label class="form-label" style="font-weight: normal;margin-top: 5px;">Annual Rate</label>
+              </div>
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="col-md-4" >
+              <div  class="col-md-4">
+                <label class="form-label" style="margin-top: 5px;">Shift:</label>
+              </div>
+              <div class="col-md-8">
+                <label class="form-label" style="font-weight: normal;margin-top: 5px;">Day</label>
+              </div>
+            </div>
+            <div class="col-md-4" >
+              <div  class="col-md-4">
+                <label class="form-label" style="margin-top: 5px;">Visa Status:</label>
+              </div>
+              <div class="col-md-8">
+                <label class="form-label" style="font-weight: normal;margin-top: 5px;">A</label>
+              </div>
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="col-md-4" >
+              <div  class="col-md-4">
+                <label class="form-label" style="margin-top: 5px;">Special Bill Rate:</label>
+              </div>
+              <div class="col-md-8">
+                <label class="form-label" style="font-weight: normal;margin-top: 5px;">123</label>
+              </div>
+            </div>
+            <div class="col-md-4" >
+              <div  class="col-md-4">
+                <label class="form-label" style="margin-top: 5px;">Pay Rate:</label>
+              </div>
+              <div class="col-md-8">
+                <label class="form-label" style="font-weight: normal;margin-top: 5px;">123</label>
+              </div>
+            </div>
+          </div>
+
+
+
+          <label style="margin-top: 20px; color:rgb(45, 144, 151);">
+            Group and Type Assignment
+          </label>
+          
+          <div class="row">
+            <div class="col-md-4" >
+              <div  class="col-md-4">
+                <label class="form-label" style="margin-top: 5px;">Group:</label>
+              </div>
+              <div class="col-md-8">
+                <label class="form-label" style="font-weight: normal;margin-top: 5px;">Accountant</label>
+              </div>
+            </div>
+            <div class="col-md-4" >
+              <div  class="col-md-4">
+                <label class="form-label" style="margin-top: 5px;">Desired Salary:</label>
+              </div>
+              <div class="col-md-8">
+                <label class="form-label" style="font-weight: normal;margin-top: 5px;">Group 1</label>
+              </div>
+            </div>
+            <div class="col-md-4" >
+              <div  class="col-md-4">
+                <label class="form-label" style="margin-top: 5px;">Applicant Type:</label>
+              </div>
+              <div class="col-md-8">
+                <label class="form-label" style="font-weight: normal;margin-top: 5px;">Type A</label>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="row" style="margin-top: 20px; right: 20vh; position: absolute; padding-bottom: 50px;">
+            <a class="btn btn-info buttonnavigation" href="add_applicant_page4.html">Prev</a>
+            <a class="btn btn-success buttonnavigation" href="../applicant_management.html">Save</a>
+          </div>
+            
+        </form>
+      </div> 
+    </div>
+
+    <script src="../../js/index.js"></script>
+  </body>
+</html>

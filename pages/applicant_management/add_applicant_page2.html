@@ -86,7 +86,7 @@
         <form>
             
           <label style="margin-bottom: 10px;">
-              Other Info
+              Identity Info
           </label>
             <div class="row">
               <div class="col-md-6 form-check" >
@@ -153,8 +153,32 @@
                   <input type="text" class="form-control" id="eyecolor" name="eyecolor" style="margin-right: 15px;margin-bottom: 10px;">
                 </div>
               </div>
+              <div class="col-md-6" >
+                <div  class="col-md-4">
+                  <label class="form-label" style="font-weight: normal;margin-top: 5px;">Date Of Birth :</label>
+                </div>
+                <div class="col-md-8">
+                  <input type="text" class="form-control" id="DOB" name="DOB" style="margin-right: 15px;margin-bottom: 10px;">
+                </div>
+              </div>
             </div>
 
+            <div class="row">
+              <div class="col-md-6" >
+                <div  class="col-md-4">
+                  <label class="form-label" style="font-weight: normal; margin-top: 5px;">Annyversary Date :</label>
+                </div>
+                <div class="col-md-8">
+                  <input type="text" class="form-control" id="annyversary" name="annyversary" style="margin-right: 15px;margin-bottom: 10px;">
+                </div>
+              </div>
+            </div>
+
+            
+
+            <label style="margin-bottom: 10px; margin-top: 20px;">
+              Contact info
+             </label>
             <div class="row">
               <div class="col-md-6" >
                 <div  class="col-md-4">
@@ -228,83 +252,45 @@
               </div>
             </div>
 
-            <div class="row">
-              <div class="col-md-12" >
-                <div  class="col-md-2">
-                  <label class="form-label" style="font-weight: normal;margin-top: 5px;">Comment :</label>
-                </div>
-                <div class="col-md-8">
-                  <textarea class="form-control" id="streetaddress" rows="4" placeholder="Street Address" style="margin-bottom: 10px;"></textarea>
-                </div>
-              </div>
-            </div>
 
-            <div class="row">
-              <div class="col-md-6" >
-                <div  class="col-md-4">
-                  <label class="form-label" style="font-weight: normal;margin-top: 5px;">Date Of Birth :</label>
-                </div>
-                <div class="col-md-8">
-                  <input type="text" class="form-control" id="DOB" name="DOB" style="margin-right: 15px;margin-bottom: 10px;">
-                </div>
-              </div>
-              <div class="col-md-6" >
-                <div  class="col-md-4">
-                  <label class="form-label" style="font-weight: normal; margin-top: 5px;">Annyversary Date :</label>
-                </div>
-                <div class="col-md-8">
-                  <input type="text" class="form-control" id="annyversary" name="annyversary" style="margin-right: 15px;margin-bottom: 10px;">
-                </div>
-              </div>
-            </div>
+           
+            <label style="margin-bottom: 10px; margin-top: 20px;">
+              Qualifications
+             </label>
 
             <div class="row"  style="margin-bottom: 10px;">
-              <div class="col-md-6 " >
-                <div  class="col-md-4">
-                    <label class="form-label" style="font-weight: normal;margin-top: 5px;">Country of Birth :</label>
-                </div>
-                <div class="col-md-8">
-                    <select class="selectpicker form-control">
-                        <option value="Country" selected>--Select Country--</option>
-                        <option value="UK">UK</option>
-                        <option value="USA">USA</option>
-                        <option value="Canada">Canada</option>
-                        <option value="Bangladesh">Bangladesh</option>
-                        <option value="India">India</option>
-                    </select>
-                </div>
-              </div>
               <div class="col-md-6 " >
                 <div  class="col-md-4">
                     <label class="form-label" style="font-weight: normal;margin-top: 5px;">Primary Language :</label>
                 </div>
                 <div class="col-md-8">
-                    <select class="selectpicker form-control">
-                        <option value="Language" selected>--Select Language--</option>
-                        <option value="English">English</option>
-                        <option value="Bangla">Bangla</option>
-                        <option value="Hindi">Hindi</option>
-                        <option value="Urdu">Urdu</option>
-                    </select>
+                  <select class="selectpicker form-control">
+                      <option value="Language" selected>--Select Language--</option>
+                      <option value="English">English</option>
+                      <option value="Bangla">Bangla</option>
+                      <option value="Hindi">Hindi</option>
+                      <option value="Urdu">Urdu</option>
+                  </select>
                 </div>
               </div>
-            </div>
-
-            <div class="row"  style="margin-bottom: 10px;">
               <div class="col-md-6 " >
                 <div  class="col-md-4">
                     <label class="form-label" style="font-weight: normal;margin-top: 5px;">Secondary Language :</label>
                 </div>
                 <div class="col-md-8">
-                    <select class="selectpicker form-control">
-                        <option value="Language" selected>--Select Language--</option>
-                        <option value="English">English</option>
-                        <option value="Bangla">Bangla</option>
-                        <option value="Hindi">Hindi</option>
-                        <option value="Urdu">Urdu</option>
-                    </select>
+                  <select class="selectpicker form-control">
+                      <option value="Language" selected>--Select Language--</option>
+                      <option value="English">English</option>
+                      <option value="Bangla">Bangla</option>
+                      <option value="Hindi">Hindi</option>
+                      <option value="Urdu">Urdu</option>
+                  </select>
                 </div>
               </div>
+            </div>
+
+
+            <div class="row"  style="margin-bottom: 10px; margin-top: 20px;">
               <div class="col-md-6 " >
                 <div  class="col-md-4">
                     <label class="form-label" style="font-weight: normal;margin-top: 5px;">Assigned Recruiter :</label>
@@ -315,6 +301,17 @@
                         <option value="Dummy1">Dummy1</option>
                         <option value="Dummy2">Dummy2</option>
                     </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="row" >
+              <div class="col-md-12" >
+                <div  class="col-md-2">
+                  <label class="form-label" style="font-weight: normal;margin-top: 5px;">Comment :</label>
+                </div>
+                <div class="col-md-8">
+                  <textarea class="form-control" id="streetaddress" rows="4" placeholder="Street Address" style="margin-bottom: 10px;"></textarea>
                 </div>
               </div>
             </div>
