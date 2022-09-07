@@ -1,4 +1,19 @@
 
+.topTitle {
+  font-size: 25px; 
+  color: #ffffff;
+}
+
+.topProfileLogo {
+  background-color: #08494d !important;
+}
+
+.topProfileLogoImg {
+  height: 40px; 
+  width:auto; 
+  background-color: #08494d !important;
+}
+
 /* dropdown right top profile icon */
 .dropbtn {
   background-color: white;

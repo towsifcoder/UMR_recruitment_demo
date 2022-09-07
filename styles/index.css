@@ -9,9 +9,16 @@
     right: 150px;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
   .site-header {
     position: relative;
-    background-color: #fff; 
+    /* background-color: #08494d;  */
+    background-color: #08494d; 
     }
   
   .site-header__wrapper {
@@ -20,8 +27,10 @@
     align-items: center;
     flex-wrap: wrap;
     padding-top: 1rem;
+    padding-bottom: 25px;
     /* padding-bottom: 1rem; */
-    background-color: #fff;
+    /* background-color: #fff; */
+    background-color: #08494d;
 }
   
   .site-header__start {
@@ -36,6 +45,7 @@
     width: 80vw;
     margin: auto;
     padding-left: 18vh;
+    padding-top: 80px;
 }
 
 .img-home{
