@@ -17,7 +17,7 @@
 
   .site-header {
     position: relative;
-    /* background-color: #08494d;  */
+    /* background-color:  */
     background-color: #08494d; 
     }
   
@@ -40,12 +40,14 @@
       margin-left: 1rem; }
 
 .main-content{
-    max-width: 90vw;
-    min-width: 50vw;
-    width: 80vw;
-    margin: auto;
-    padding-left: 18vh;
-    padding-top: 80px;
+  max-width: 90vw;
+  min-width: 50vw;
+  width: 80vw;
+  margin: auto;
+  padding-left: 18vh;
+  padding-top: 80px;
+  /* position: relative;
+  z-index: 1; */
 }
 
 .img-home{
